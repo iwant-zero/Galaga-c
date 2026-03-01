@@ -1124,7 +1124,7 @@
   class GameFart extends GameBase{
     constructor(){
       super();
-      this.seed.v = (0xFA47C4R0 ^ (Date.now()>>>0)) >>> 0;
+      this.seed.v = (0xFA47C4A0 ^ (Date.now()>>>0)) >>> 0;
       this.laneY = [H*0.35, H*0.50, H*0.65];
       this.car = {lane:1, x:170, y:this.laneY[1], w:44, h:26, shiftCd:0, fartCd:0, fartT:0};
       this.obstacles=[];
