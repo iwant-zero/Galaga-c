@@ -374,7 +374,7 @@
   class GameGal extends GameBase{
     constructor(){
       super();
-      this.seed.v = 0xGALAGA ^ (Date.now()>>>0);
+      this.seed.v = (0x4A6B1A9D ^ (Date.now()>>>0)) >>> 0;
       this.player = {x:W/2, y:H-60, r:16, cd:0};
       this.bullets=[];
       this.enemies=[];
@@ -587,7 +587,7 @@
   class GameNug extends GameBase{
     constructor(){
       super();
-      this.seed.v = 0xNUGURI ^ (Date.now()>>>0);
+    this.seed.v = (0x2C7F3D11 ^ (Date.now()>>>0)) >>> 0;
       this.tile=36;
       this.grid = this.makeGrid();
       this.pellets = new Set();
@@ -869,7 +869,7 @@
   class GameBog extends GameBase{
     constructor(){
       super();
-      this.seed.v = 0xB0GB0G ^ (Date.now()>>>0);
+      this.seed.v = (0xB0B0B00B ^ (Date.now()>>>0)) >>> 0;
       this.player = {x:W/2, y:H*0.75, r:14, cd:0};
       this.bubbles=[];
       this.enemies=[];
@@ -1124,7 +1124,7 @@
   class GameFart extends GameBase{
     constructor(){
       super();
-      this.seed.v = 0xFARTC4R ^ (Date.now()>>>0);
+      this.seed.v = (0xFA47C4R0 ^ (Date.now()>>>0)) >>> 0;
       this.laneY = [H*0.35, H*0.50, H*0.65];
       this.car = {lane:1, x:170, y:this.laneY[1], w:44, h:26, shiftCd:0, fartCd:0, fartT:0};
       this.obstacles=[];
